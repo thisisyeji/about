@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
+import Common from './Common';
 
-const Intro = () => {
-	return <div>Intro</div>;
-};
+const Intro = forwardRef((props, ref) => {
+	return (
+		<div ref={ref}>
+			<Common>Intro</Common>
+		</div>
+	);
+});
 
 export default Intro;

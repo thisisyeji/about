@@ -1,12 +1,11 @@
 import React, { forwardRef } from 'react';
 import Common from './Common';
 
-const Images = forwardRef((props, ref) => {
+const Info = forwardRef((props, ref) => {
 	return (
 		<div ref={ref}>
-			<Common>Images</Common>
+			<Common>Info</Common>
 		</div>
 	);
 });
-
-export default Images;
+export default Info;
