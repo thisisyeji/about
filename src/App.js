@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
 import Intro from './components/Intro';
 import Images from './components/Images';
 import Info from './components/Info';
@@ -37,6 +37,7 @@ footer, header, hgroup, main, menu, nav, section {
 }
 body {
   line-height: 1;
+	box-sizing: border-box;
 }
 menu, ol, ul {
   list-style: none;
@@ -63,6 +64,33 @@ function App() {
 	const onSectionClick = (idx) => {
 		sectionRef.current[idx].scrollIntoView({ behavior: 'smooth' });
 	};
+
+	const handleScroll = (entries) => {
+		entries.forEach((entry) => {
+			if (entry.isIntersecting) {
+				entry.target.classList.add('on');
+			} else {
+				entry.target.classList.remove('on');
+			}
+		});
+	};
+
+	// intersection observer 옵션
+	const options = {
+		root: null, // 관찰 대상의 부모 요소를 지정 (기본값 null)
+		rootMargin: '0px', // 관찰하는 뷰포트의 마진 지정 (기본값 0 0 0 0)
+		threshold: 0.4, // 관찰 요소와 어느정도 겹쳤을 때 콜백을 수행할지 지정 (기본값 0)
+	};
+
+	useEffect(() => {
+		const observer = new IntersectionObserver(handleScroll, options);
+		sectionRef.current.forEach((target) => {
+			observer.observe(target);
+		});
+		return () => {
+			observer.disconnect();
+		};
+	}, []);
 
 	return (
 		<div className='App'>
