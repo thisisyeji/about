@@ -4,11 +4,19 @@ import styled from 'styled-components';
 const NavBar = styled.nav`
 	position: fixed;
 	top: 0;
-	width: 150px;
-	height: 100vh;
-	border-right: 1px solid #000;
+	width: 100vw;
+	border-bottom: 1px solid #000;
+	background: #fff;
+	z-index: 5;
+
 	ul {
-		padding: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 20px;
+		li {
+			padding: 10px;
+		}
 	}
 `;
 
