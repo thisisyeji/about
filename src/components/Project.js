@@ -50,7 +50,7 @@ const Slide = styled(SwiperSlide)`
 	border: 1px solid #000;
 `;
 
-const Info = forwardRef((props, ref) => {
+const Project = forwardRef((props, ref) => {
 	return (
 		<InfoBox ref={ref}>
 			<Title>PROJECT</Title>
@@ -78,4 +78,4 @@ const Info = forwardRef((props, ref) => {
 		</InfoBox>
 	);
 });
-export default Info;
+export default Project;
