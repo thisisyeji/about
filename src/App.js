@@ -1,8 +1,9 @@
 import { useRef, useEffect } from 'react';
-import Intro from './components/Intro';
-import Images from './components/Images';
-import Info from './components/Info';
 import Nav from './components/Nav';
+import Intro from './components/Intro';
+import Project from './components/Project';
+import Images from './components/Images';
+import Contact from './components/Contact';
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
@@ -37,8 +38,12 @@ footer, header, hgroup, main, menu, nav, section {
 }
 body {
   line-height: 1;
+}
+
+div {
 	box-sizing: border-box;
 }
+
 menu, ol, ul {
   list-style: none;
 }
@@ -87,6 +92,7 @@ function App() {
 		sectionRef.current.forEach((target) => {
 			observer.observe(target);
 		});
+
 		return () => {
 			observer.disconnect();
 		};
@@ -97,8 +103,9 @@ function App() {
 			<GlobalStyle />
 			<Nav onSectionClick={onSectionClick} />
 			<Intro ref={(el) => (sectionRef.current[0] = el)} />
-			<Info ref={(el) => (sectionRef.current[1] = el)} />
+			<Project ref={(el) => (sectionRef.current[1] = el)} />
 			<Images ref={(el) => (sectionRef.current[2] = el)} />
+			<Contact ref={(el) => (sectionRef.current[3] = el)} />
 		</div>
 	);
 }

@@ -31,7 +31,7 @@ const Nav = ({ onSectionClick }) => {
 			<ul>
 				<li onClick={() => onSectionClick(0)}>Intro</li>
 				<li onClick={() => onSectionClick(1)}>Info</li>
-				<li onClick={() => onSectionClick(2)}>Images</li>
+				<li onClick={() => onSectionClick(2)}>Tmi</li>
 				<li onClick={() => onSectionClick(3)}>Contact</li>
 			</ul>
 		</NavBar>
