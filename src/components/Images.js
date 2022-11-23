@@ -20,6 +20,10 @@ const Desc = styled.p`
 	margin-bottom: 30px;
 	padding: 10px;
 
+	opacity: 0;
+	transform: translateX(-50px);
+	transition: 0.5s 0.1s;
+
 	span {
 		cursor: pointer;
 		transition: 0.5s;
@@ -44,6 +48,10 @@ const Contents = styled.div`
 	flex-wrap: wrap;
 	gap: 10px;
 
+	opacity: 0;
+	transform: translateY(50px);
+	transition: 0.5s 0.2s;
+
 	.img {
 		width: calc((100% - 20px) / 3);
 
@@ -61,6 +69,16 @@ const ImgWrap = styled.div`
 
 	&.on {
 		${Title} {
+			opacity: 1;
+			transform: translateY(0);
+		}
+
+		${Desc} {
+			opacity: 1;
+			transform: translateX(0);
+		}
+
+		${Contents} {
 			opacity: 1;
 			transform: translateY(0);
 		}
