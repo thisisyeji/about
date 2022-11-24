@@ -26,6 +26,7 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+	box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -38,10 +39,7 @@ footer, header, hgroup, main, menu, nav, section {
 }
 body {
   line-height: 1;
-}
-
-div {
-	box-sizing: border-box;
+	font-family: 'Alexandria', sans-serif;
 }
 
 menu, ol, ul {
@@ -60,6 +58,11 @@ table {
   border-spacing: 0;
 }
 
+
+h2 {
+	font-size: 4vw;
+	font-weight: 700;
+}
 
 `;
 
@@ -84,7 +87,7 @@ function App() {
 	const options = {
 		root: null, // 관찰 대상의 부모 요소를 지정 (기본값 null)
 		rootMargin: '0px', // 관찰하는 뷰포트의 마진 지정 (기본값 0 0 0 0)
-		threshold: 0.4, // 관찰 요소와 어느정도 겹쳤을 때 콜백을 수행할지 지정 (기본값 0)
+		threshold: 0.3, // 관찰 요소와 어느정도 겹쳤을 때 콜백을 수행할지 지정 (기본값 0)
 	};
 
 	useEffect(() => {

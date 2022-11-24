@@ -19,8 +19,13 @@ const NavBar = styled.nav`
 		margin-right: 50px;
 
 		li {
+			font-weight: 200;
 			padding: 20px 10px;
 			cursor: pointer;
+
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 	}
 `;
@@ -30,7 +35,7 @@ const Nav = ({ onSectionClick }) => {
 		<NavBar>
 			<ul>
 				<li onClick={() => onSectionClick(0)}>Intro</li>
-				<li onClick={() => onSectionClick(1)}>Info</li>
+				<li onClick={() => onSectionClick(1)}>Project</li>
 				<li onClick={() => onSectionClick(2)}>Tmi</li>
 				<li onClick={() => onSectionClick(3)}>Contact</li>
 			</ul>

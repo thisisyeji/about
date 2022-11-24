@@ -5,8 +5,6 @@ import axios from 'axios';
 
 const Title = styled.h2`
 	color: #fff;
-	font-size: 50px;
-	font-weight: 700;
 	margin-bottom: 30px;
 
 	opacity: 0;
@@ -42,7 +40,8 @@ const Desc = styled.p`
 const Contents = styled.div`
 	width: 100%;
 	height: 80%;
-	overflow: scroll;
+	overflow-y: scroll;
+	overflow-x: hidden;
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -63,8 +62,9 @@ const Contents = styled.div`
 
 const ImgWrap = styled.div`
 	width: 100%;
-	height: 200vh;
-	padding: 150px 30px;
+	height: 150vh;
+	padding: 50px;
+	padding-top: 100px;
 	background: #222;
 
 	&.on {
