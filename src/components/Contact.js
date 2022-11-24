@@ -45,7 +45,6 @@ const Content = styled.div`
 		opacity: 0;
 		transform: translateY(-20px);
 		font-size: 3vw;
-		margin-left: 10px;
 		transition: 0.5s;
 	}
 `;
@@ -53,6 +52,7 @@ const Content = styled.div`
 const ContactWrap = styled.section`
 	width: 100%;
 	height: 60vh;
+	background: #efefef;
 	padding: 50px;
 
 	display: flex;

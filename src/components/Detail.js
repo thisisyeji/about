@@ -15,6 +15,7 @@ const ImgBox = styled.div`
 const Content = styled.div`
 	width: 60%;
 	font-weight: 200;
+	padding: 10px;
 
 	display: flex;
 	flex-direction: column;

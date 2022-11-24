@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Profile = styled.div`
 	width: 300px;
 	height: 300px;
-	background: #fff;
+	background: #efefef;
 	border-radius: 50%;
 	margin: 0 auto;
 	opacity: 0;

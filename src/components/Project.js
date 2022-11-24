@@ -29,6 +29,7 @@ const Wrapper = styled.div`
 const InfoBox = styled.section`
 	width: 100%;
 	height: 100vh;
+	background: #efefef;
 	padding: 50px;
 	padding-top: 100px;
 	opacity: 0;
