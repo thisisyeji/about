@@ -1,4 +1,4 @@
-# devfinder
+# Yeji's Portfolio
 
 React로 제작한 개인 포트폴리오용 자기소개 웹사이트입니다.
 
@@ -17,7 +17,7 @@ React로 제작한 개인 포트폴리오용 자기소개 웹사이트입니다.
 
 ### Features
 
-- Project 소개
+- 진행했던 Project 소개
 
 ### Screenshot
 
@@ -25,7 +25,7 @@ React로 제작한 개인 포트폴리오용 자기소개 웹사이트입니다.
 
 ### Links
 
-- Live Site URL: []()
+- Live Site URL: [https://thisisyeji.github.io/about](https://thisisyeji.github.io/about)
 
 ## My process
 
