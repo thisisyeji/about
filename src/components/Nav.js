@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
+import { LIST } from '../constants';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
-const NavBar = styled.nav`
+const Header = styled.header`
 	position: fixed;
 	top: 0;
 	width: 100vw;
@@ -11,22 +13,51 @@ const NavBar = styled.nav`
 	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 	z-index: 5;
 
-	ul {
-		display: flex;
-		justify-content: flex-end;
-		align-items: center;
-		gap: 20px;
-		margin-right: 50px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+`;
 
-		li {
-			font-weight: 200;
-			padding: 20px 10px;
-			cursor: pointer;
+const NavList = styled.ul`
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-right: 50px;
 
-			&:hover {
-				text-decoration: underline;
-			}
+	li {
+		font-weight: 200;
+		padding: 20px 10px;
+		margin-right: 20px;
+		cursor: pointer;
+
+		&:hover {
+			text-decoration: underline;
 		}
+	}
+`;
+
+const GitBtn = styled.button`
+	background-color: transparent;
+	border: none;
+	margin-right: 20px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	cursor: pointer;
+
+	&:hover {
+		svg {
+			color: #dcfd37;
+		}
+	}
+
+	svg {
+		width: 30px;
+		height: 30px;
+		color: #fff;
+		transition: 0.5s;
 	}
 `;
 
