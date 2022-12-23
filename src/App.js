@@ -1,8 +1,7 @@
 import { useRef, useEffect } from 'react';
 import Nav from './components/Nav';
 import Intro from './components/Intro';
-import Project from './components/Project';
-import Images from './components/Images';
+import Projects from './components/Projects';
 import Contact from './components/Contact';
 import { createGlobalStyle } from 'styled-components';
 
@@ -106,9 +105,8 @@ function App() {
 			<GlobalStyle />
 			<Nav onSectionClick={onSectionClick} />
 			<Intro ref={(el) => (sectionRef.current[0] = el)} />
-			<Project ref={(el) => (sectionRef.current[1] = el)} />
-			<Images ref={(el) => (sectionRef.current[2] = el)} />
-			<Contact ref={(el) => (sectionRef.current[3] = el)} />
+			<Projects ref={(el) => (sectionRef.current[1] = el)} />
+			<Contact ref={(el) => (sectionRef.current[2] = el)} />
 		</div>
 	);
 }
