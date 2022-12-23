@@ -32,14 +32,22 @@ const NavBar = styled.nav`
 
 const Nav = ({ onSectionClick }) => {
 	return (
-		<NavBar>
-			<ul>
-				<li onClick={() => onSectionClick(0)}>Intro</li>
-				<li onClick={() => onSectionClick(1)}>Project</li>
-				<li onClick={() => onSectionClick(2)}>Tmi</li>
-				<li onClick={() => onSectionClick(3)}>Contact</li>
-			</ul>
-		</NavBar>
+		<Header>
+			<NavList>
+				{LIST.map((li, idx) => {
+					return (
+						<li key={idx} onClick={() => onSectionClick(idx)}>
+							{li}
+						</li>
+					);
+				})}
+			</NavList>
+
+			<GitBtn
+				onClick={() => window.open('https://github.com/thisisyeji', '_blank')}>
+				<GitHubIcon />
+			</GitBtn>
+		</Header>
 	);
 };
 
