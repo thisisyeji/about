@@ -84,7 +84,7 @@ const Intro = forwardRef((props, ref) => {
 			</Title>
 
 			<Profile>
-				<img src={process.env.PUBLIC_URL + '/emoji.png'} alt='profile' />
+				<img src={process.env.PUBLIC_URL + '/images/emoji.png'} alt='profile' />
 			</Profile>
 		</IntroWrap>
 	);
