@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { MdMailOutline } from 'react-icons/md';
 
 const Title = styled.h2`
-	color: #fff;
+	color: #efefef;
 	font-size: 5vw;
 	font-weight: 900;
 	font-style: italic;
@@ -23,6 +23,7 @@ const Content = styled.div`
 	&:hover {
 		svg {
 			transform: scale(1.2);
+			background-color: #dcfd37;
 		}
 		span {
 			opacity: 1;
@@ -32,8 +33,8 @@ const Content = styled.div`
 
 	svg {
 		font-size: 4vw;
-		color: #fff;
-		background: #222;
+		color: #222;
+		background: #fff;
 		border: 1px solid #555;
 		border-radius: 100px;
 		padding: 15px;
@@ -42,6 +43,7 @@ const Content = styled.div`
 	}
 
 	span {
+		color: #efefef;
 		opacity: 0;
 		transform: translateY(-20px);
 		font-size: 3vw;
@@ -52,7 +54,7 @@ const Content = styled.div`
 const ContactWrap = styled.section`
 	width: 100%;
 	height: 60vh;
-	background: #efefef;
+	background: #222;
 	padding: 50px;
 
 	display: flex;
