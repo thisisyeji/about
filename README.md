@@ -1,6 +1,6 @@
 # Yeji's Portfolio
 
-사전과제 - React로 제작한 개인 포트폴리오용 자기소개 웹사이트입니다.
+React로 제작한 개인 포트폴리오용 자기소개 웹사이트입니다.
 
 ## Table of contents
 
