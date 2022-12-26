@@ -108,7 +108,7 @@ const Skill = styled.div`
 	}
 `;
 
-const ProJectList = ({
+const ProjectList = ({
 	id,
 	title,
 	gitHubUrl,
@@ -166,4 +166,4 @@ const ProJectList = ({
 	);
 };
 
-export default ProJectList;
+export default ProjectList;
