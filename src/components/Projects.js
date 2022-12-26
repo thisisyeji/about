@@ -1,7 +1,7 @@
 import React, { forwardRef } from 'react';
 import styled from 'styled-components';
 import { PROJECT_LIST } from '../constants';
-import ProJectList from './ProJectList';
+import ProjectList from './ProjectList';
 
 const Title = styled.h2`
 	color: #222;
@@ -54,7 +54,7 @@ const Projects = forwardRef((props, ref) => {
 				<Title>Projects</Title>
 				<div className='content'>
 					{PROJECT_LIST.map((li) => {
-						return <ProJectList key={li.id} {...li} />;
+						return <ProjectList key={li.id} {...li} />;
 					})}
 				</div>
 			</Wrapper>

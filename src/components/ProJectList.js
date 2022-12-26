@@ -62,7 +62,6 @@ const ImgBox = styled.div`
 
 const Content = styled.div`
 	width: 60%;
-	font-weight: 200;
 	padding: 10px;
 
 	display: flex;
@@ -70,8 +69,9 @@ const Content = styled.div`
 	justify-content: space-between;
 
 	p {
-		line-height: 1.5;
-		font-weight: 400;
+		color: #444;
+		line-height: 1.7;
+		margin-bottom: 20px;
 	}
 `;
 
@@ -102,12 +102,22 @@ const Skill = styled.div`
 
 		dd {
 			display: inline;
-			line-height: 1.3;
+			color: #444;
+			line-height: 1.5;
 		}
 	}
 `;
 
-const ProJectList = ({ id, title, gitHubUrl, siteUrl, desc, front, back }) => {
+const ProJectList = ({
+	id,
+	title,
+	gitHubUrl,
+	siteUrl,
+	role,
+	desc,
+	front,
+	back,
+}) => {
 	return (
 		<Accordion>
 			<AccordionSummary
@@ -134,7 +144,10 @@ const ProJectList = ({ id, title, gitHubUrl, siteUrl, desc, front, back }) => {
 						</div>
 					</ImgBox>
 					<Content>
-						<p>{desc}</p>
+						<div>
+							<p>{role}</p>
+							<p>{desc}</p>
+						</div>
 
 						<Skill>
 							<div>
